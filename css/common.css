@@ -1,0 +1,94 @@
+﻿html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+html { 	 margin:0; padding:0; height:100%; /* this is the key! */ } 
+body { 	margin:0; padding:0; height:100%; /* this is the key! */ } 
+form { 	margin:0; padding:0;  /* this is the key! */ } 
+body{ font-family: Verdana, Helvetica; font-size : 12px; }
+table { }
+td { vertical-align: top; }
+h1, h2, h3 { font-weight: bold; }
+h1 { font-size: 3em;  } h2 { font-size: 2em;} h3 { font-size: 1.5em; }
+br {    line-height: 1em; }
+input[type="text"]
+{
+	line-height:21px;
+	height:21px;
+	padding: 0;
+}
+
+h2 { line-height: 1.6em; }
+
+/*FlexiGrid*/
+.myFlexiGrid-Container { display: none; }
+tr.ButtonContainerRow{ height:1%;}
+.CommandPane { padding: 7px 0;}
+.Scrollable { height:100%;width: 100%; overflow:auto; position:relative; padding: 0 !important; }
+.ScrollContent{ position: absolute; top: 0; left:0; width: 100%;   }
+.MinHeight{ height: 1%; }
+.Stretch {width:100%;height:100%;}
+.HorizontalBar { height: 7px; }
+.VerticalBar { height: 7px; }
+.AlignToParent{ height: 100%; }
