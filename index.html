@@ -6,26 +6,19 @@
 
 </style>
 
-<script src="..\core.js" type="text/javascript"></script>
-<script src="..\ui-helper.js" type="text/javascript"></script>
-<script src="angular.js" type="text/javascript"></script>
-<script src="init.js" type="text/javascript"></script>
-<script src="directives\directives.js" type="text/javascript"></script>
+<link href="css/common.css" type="text/css" rel="stylesheet">
+<link href="css/combo.css" type="text/css" rel="stylesheet">
 
-<link href="css\common.css" type="text/css" rel="stylesheet"/>
-<link href="css\combo.css" type="text/css" rel="stylesheet"/>
+<script src="lib/core.js" type="text/javascript"></script>
+<script src="lib/ui-helper.js" type="text/javascript"></script>
+<script src="lib/angular.js" type="text/javascript"></script>
+<script src="scripts/app.js" type="text/javascript"></script>
+<script src="directives/combobox.js" type="text/javascript"></script>
 
-<script type="text/ng-template" id="combo-template.html">
-    <div id="{{id}}-wrapper" class="combo-wrapper">
-        <input id="{{id}}-input" type="text" ng-model="query" class="combo-input" ng-focus="showMenu = true" ng-blur="showMenu = false"/><span class="combo-arrow"></span>
-        <ul id="{{id}}-menu" class="combo-menu" show-on-top-level ng-show="showMenu">
-            <li class="row" ng-repeat="item in items | filter:query">{{item.name}}</li>
-        </ul>
-    </div>
-</script>
+
 
 </head>
 <body ng-controller="CityController">
-   <combo-items id="cities" ng-model="cities"></combo-items>
+   <combo-items id="cities" ng-model="comboModel"></combo-items>   
 </body>
 </html>

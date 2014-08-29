@@ -1,7 +1,8 @@
 var app = angular.module('angularApp', []);
 
 app.controller('CityController', ['$scope', function ($scope) {
-    $scope.cities = [
+    $scope.comboModel = { 
+	items : [
         {
             'name': 'Istanbul',
             'value': 34
@@ -22,5 +23,10 @@ app.controller('CityController', ['$scope', function ($scope) {
             name: 'Bursa',
             value: '16'
         }
-    ];
+    	],	
+		width : 140,
+		arrow : {
+			width : 25
+		}
+	}
 }]);
