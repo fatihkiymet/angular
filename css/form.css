@@ -1,0 +1,26 @@
+.form-container
+{
+    padding: 21px;
+    display: inline-block;
+}
+
+ul.row li
+{
+    float : left;
+    line-height: 28px;
+    height: 28px;
+}
+
+ul.row label
+{
+    width: 140px;
+    display: inline-block;
+    color: #bebebe;
+}
+
+.btn-container
+{
+    text-align: right;
+    height: 31px;
+    line-height: 31px;
+}
