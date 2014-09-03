@@ -15,7 +15,7 @@
 .combo-input
 {
     border: solid 1px #d4d4d4 !important;
-    height: 24px !important;	
+    height: 28px !important;	
     float: left;
     margin: 0;		
 	display: inline-block;
@@ -24,10 +24,10 @@
 
 .combo-arrow
 {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     display: block;
-    background: transparent url('images/icons.png') no-repeat 7px 7px;
+    background: transparent url('images/icons.png') no-repeat 9px 9px;
     border: solid 1px #d4d4d4;
 	box-sizing : border-box;
     float: left;
@@ -36,8 +36,8 @@
 
 .combo-menu li.row
 {
-    height: 2em;
-    line-height: 2em;
+    height: 2.4em;
+    line-height: 2.4em;
     border-bottom: solid 1px #d4d4d4 ;
     text-align: center;
 }

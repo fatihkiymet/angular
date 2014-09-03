@@ -7,18 +7,38 @@
 </style>
 
 <link href="css/common.css" type="text/css" rel="stylesheet">
+<link href="css/form.css" type="text/css" rel="stylesheet">
 <link href="css/combo.css" type="text/css" rel="stylesheet">
 
 <script src="lib/core.js" type="text/javascript"></script>
 <script src="lib/ui-helper.js" type="text/javascript"></script>
 <script src="lib/angular.js" type="text/javascript"></script>
 <script src="scripts/app.js" type="text/javascript"></script>
+<script src="controllers/signup-controller.js" type="text/javascript"></script>
 <script src="directives/combobox.js" type="text/javascript"></script>
 
 
 
-</head>
-<body ng-controller="CityController">
-   <combo-items id="cities" ng-model="comboModel"></combo-items>   
+<body ng-controller="SignUpController">
+    <form name="signupForm">
+        <div class="form-container">
+            <div ng-repeat="field in fields">
+                <ul class="row clearfix" ng-switch on="field.type">
+                    <li class="col-label"><label>{{field.caption}}</label></li>
+                    <li ng-switch-when="combo"  class="col-editor">                        
+                        <combo-box items="field.items" ng-model="field.name"></combo-box>
+                    </li>                    
+                    <li ng-switch-when="text" class="col-editor">                        
+                        <input type="text" ng-model="field.name"/>
+                    </li>
+                    <li ng-switch-when="email" class="col-editor">                        
+                        <input type="email" ng-model="field.name"/>
+                    </li>                    
+                    <li class="col-val"><span class="val-msg"></span></li>
+                </ul>
+            </div>
+            <div class="btn-container"><input type="submit"/></div>
+        </div>
+    </form>
 </body>
 </html>
